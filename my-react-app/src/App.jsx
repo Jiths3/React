@@ -1,13 +1,12 @@
-import Header from "./Header.jsx"
+import Navbar from "./Navbar.jsx";
 
-function App() {
-  return(
-
-      <Header/>
-
-  );
+export default function App() {
   
- 
+  return <Navbar />
+    
+
+  
+  
+
 }
 
-export default App
