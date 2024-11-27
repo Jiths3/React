@@ -7,10 +7,22 @@ import { useState } from "react";
 
 export default function App() {
 
+  const fruits = [{name:"apple" , calories:98 },
+    {name:"orange" , calories:32},
+    {name:"mango" , calories:21},
+    {name:"pineapple" , calories:31}];
+
+  const Vegetables = [{name:"ladiesfinger" , calories:18 },
+    {name:"tomato" , calories:312},
+    {name:"carrot" , calories:51},
+    {name:"beetroot" , calories:16}];  
+
 return(
 
   <>
-      <List />
+      <List items = {fruits} />
+      <List items = {Vegetables} />
+
   
   </>
 

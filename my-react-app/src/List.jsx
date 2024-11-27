@@ -1,14 +1,14 @@
 import React, { useState } from 'react'
 
 
-export default function List() {
+export default function List(props) {
 
-    const fruits = ["apple", "orange" , "mango", "pineapple"]
+   
+    const ItemsList = props.items               
+    const ListItems = ItemsList.map(item=> <li>{item.name}{item.calories}</li> )
 
-    const ListItems = fruits.map(item => <li>{item}</li> )
 
-
-    return(<>
+    return(<>   
 
             <ol>{ListItems}</ol>
 
