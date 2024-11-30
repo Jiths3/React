@@ -1,9 +1,11 @@
-export default function Button(props){
+export default function Button(){
+
+    let count = 0
+    const handleClick = (e) => e.target.textContent = "Ouch";     
+
     return(
-        <div>
-        <button className="button">Click me</button>
-        <button className="button">Click me</button>
-        </div>
+
+        <button onClick={(e) => handleClick(e)}>Click me</button>
 
     );
 
