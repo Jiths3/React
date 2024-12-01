@@ -5,14 +5,17 @@
 import List from "./List.jsx"
 import { useState } from "react";
 import Button from "./Button.jsx";
-
+import MyComponent from "./MyComponent.jsx";
+import Counter from "./Counter.jsx";
 
 export default function App() {
 
 return(
 
   <>
-    <Button  />
+    <Counter />
+
+
 
   </>
 
