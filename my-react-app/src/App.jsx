@@ -20,6 +20,7 @@ return(
     <ColorPicker />
     <Counter />
     <Updater />
+    <List />
    
 
 
