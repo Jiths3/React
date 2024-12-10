@@ -2,7 +2,7 @@
 // import Food from "./Food.jsx";
 // import Card from "./Card.jsx";
 // import Button from "./Button.jsx";
-import List from "./List.jsx"
+import ToDoList from "./ToDoList.jsx"
 import { useState } from "react";
 import Button from "./Button.jsx";
 import MyComponent from "./MyComponent.jsx";
@@ -16,15 +16,9 @@ return(
 
   <>
    
-    
-    <ColorPicker />
-    <Counter />
-    <Updater />
-    <List />
-   
-
-
-
+  
+    <ToDoList />
+  
   </>
 
 );
