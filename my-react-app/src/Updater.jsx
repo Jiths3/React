@@ -1,18 +1,18 @@
-import React, {useState} from 'react'
+import React, {useState, useEffect} from 'react'
 
 function Updater() {
 
-    const [car , setCar] = useState({Carname: "Minicooper", Year: 2020 , CompanyName : "Cooperworks"});
+    const [count , setCount] = useState(0);
 
-    const handleCarNameChange = (e) =>
-        setCar(c => ({...car, Carname: e.target.value})  )
+    useEffect(()=>{
+        document.title = `Count ${count}`
+    });
 
-    const handleYearChange = (e) =>
-        setCar(c => ({...car, Year: e.target.value})  )
-
-    const handleCompanyName = (e) =>
-        setCar(c => ({...car, CompanyName: e.target.value})  )
-
+    function AddCount(){
+        setCount(c=> c+1);
+    } 
+    
+    
 
 
 
@@ -22,16 +22,11 @@ function Updater() {
 
         
         <p>    
-            My favorite car is : {car.Carname}<br />
-            Year of release: {car.Year} <br />
-            Company Name : {car.CompanyName}
+            Count: {count}
         </p>
+        <button onClick={AddCount}>Add</button>
 
-        <input type="text" value = {car.Carname} onChange={handleCarNameChange}/>
-        <br />
-        <input type="number" value = {car.Year} onChange={handleYearChange} />
-        <br />
-        <input type="text" value = {car.CompanyName} onChange={handleCompanyName}/>
+
 
       
     </div>
